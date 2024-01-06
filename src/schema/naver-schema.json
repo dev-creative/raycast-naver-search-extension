@@ -1,0 +1,49 @@
+{
+  "$ref": "#/definitions/NaverTypeaheadSearchResult",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "NaverTypeaheadSearchResult": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "items": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "type": "array"
+        },
+        "intend": {
+          "items": {},
+          "type": "array"
+        },
+        "items": {
+          "items": {
+            "items": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "type": "array"
+        },
+        "query": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "query",
+        "answer",
+        "intend",
+        "items"
+      ],
+      "type": "object"
+    }
+  }
+}
